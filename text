@@ -1,0 +1,58 @@
+// import React from "react";
+// // import { Context } from '../context/contextApi'
+// import { useState } from "react";
+// import { useLocation, useNavigate } from "react-router-dom";
+// import { BiSearchAlt } from "react-icons/bi";
+// import {FaGithub} from "react-icons/fa";
+// import {BsLinkedin} from "react-icons/bs"
+
+// function Header() {
+//   const [searchQuery, setSearchQuery] = useState("");
+//   const navigate = useNavigate();
+
+//   const searchQueryHandler = (event) => {
+//     if (
+//       (event?.key === "Enter" || event === "searchButton") &&
+//       searchQuery?.length > 0
+//     ) {
+//       navigate(`/searchResult/${searchQuery}`);
+//     }
+//   };
+
+//   const { pathname } = useLocation();
+//   const pageName = pathname?.split("/")?.filter(Boolean)?.[0];
+//   console.log(pageName);
+//   return (
+//     <div className="flex justify-evenly items-center h-[56px] bg-gray-500 ">
+//       <div>
+//         <p>logo</p>
+//       </div>
+//       <div>
+//         <input
+//           type="text"
+//           value={searchQuery}
+//           onChange={(e) => {
+//             setSearchQuery(e.target.value);
+//           }}
+//           onKeyUp={searchQueryHandler}
+//           className="md:w-[500px] w-[50vw] h-[40px] bg-white  outline-none p-4"
+//         />
+//         <button onClick={searchQueryHandler("searchButton")} className="bg-white pt-[11px] pb-[13px] pr-[10px] ml-[-10px]">
+//           <BiSearchAlt/>
+//         </button>
+//       </div>
+
+//       <div className="flex flex-row gap-[10px]">
+//         <a href="/">
+//           <FaGithub className="text-[30px]"/>
+//         </a>
+
+//         <a href="/">
+//           <BsLinkedin className="text-[30px] text-blue-500"/>
+//         </a>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Header;
