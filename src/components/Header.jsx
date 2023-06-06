@@ -49,7 +49,7 @@ function Header() {
       </div>
 
       <div className="flex flex-row gap-[15px]">
-        <a href="/">
+        <a href="https://github.com/vijit200/foodrecipe">
           <FaGithub className="text-[30px] text-white"/>
         </a>
 
